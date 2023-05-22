@@ -1,25 +1,30 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
+import Practice from './practice';
+import Practice1 from './practice1';
 import './App.css';
+import Hooks1 from './hooks1';
+import Hooks2 from './hooks2';
+import Hooks3 from './hooks3';
+import Hooks4 from './hooks4';
+let name='disha';
+
 
 function App() {
   return (
+    <>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Practice name={name} course='react'/>
+    {/* <Practice1/> */}
+   <button type="button" class="btn btn-primary">Primary</button> 
     </div>
-  );
+    {/* demo file till he */}
+
+    <Hooks1/>
+    <Hooks2/>
+    <Hooks3/>
+    <Hooks4/>
+    </>
+    );
 }
 
 export default App;
